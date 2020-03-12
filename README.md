@@ -1,1 +1,1 @@
-On going project to build Language Course Website which can shows available courses commercially.
+On going project to build Language Course Website which can shows available commercial courses.
