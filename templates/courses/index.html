@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+        <h2 style="text-align: center">Improve Bahasa Inggris Bisa Secepat Angin? Gabung Wind Course Sekarang!</h2>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col s4">
+                <!-- Promo Content 1 goes here -->
+                <div class="center">
+                    <i class="large material-icons" style="color: #FFC300">flash_on</i>
+                    <p>Belajar Lebih Cepat</p>
+                    <p class="light center">Dengan metode angin, belajar jadi lebih cepat</p>
+                </div>
+            </div>
+
+            <div class="col s4">
+                <!-- Promo Content 2 goes here -->
+                <div class="center">
+                    <i class="large material-icons" style="color: #6a1b9a">assignment_ind</i>
+                    <p>Expert Review</p>
+                    <p class="light center">Free konsultasi progress ke expert setiap minggu</p>
+                </div>
+            </div>
+
+            <div class="col s4">
+                <!-- Promo Content 3 goes here -->
+                <div class="center">
+                    <i class="large material-icons" style="color: #00bfa5">group</i>
+                    <p>Society Support</p>
+                    <p class="light center">Tersedia general group discussion setiap hari</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3 style="text-align: center">Cari Paket</h3>
+        <div class="row ">
+            <div class="col s12">
+                <!-- Promo Content 1 goes here -->
+                <div class="center">
+                    <form action="{% url 'new_search' %}" method="post">
+                        {% csrf_token %}
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">search</i>
+                            <input type="text" name="keyword">
+                        </div>
+                        <br>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">chevron_right</i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
