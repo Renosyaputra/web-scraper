@@ -1,1 +1,1 @@
-On going project to build Language Course Website which can shows available commercial courses.
+This is a project about Language Course Website prototype which simplifies people who look for commercial language courses in India. This website is scraping results based on the availability in the craigslist.org 
